@@ -1318,9 +1318,9 @@ var usStates = [
 	{ name: 'Michigan', abbreviation: 'MI' },
 	// { name: 'Minnesota', abbreviation: 'MN'},
 	// { name: 'Mississippi', abbreviation: 'MS'},
-	// { name: 'Missouri', abbreviation: 'MO'},
+	{ name: 'Missouri', abbreviation: 'MO'},
 	// { name: 'Montana', abbreviation: 'MT'},
-	// { name: 'Nebraska', abbreviation: 'NE'},
+	{ name: 'Nebraska', abbreviation: 'NE'},
 	{ name: 'Nevada', abbreviation: 'NV' },
 	// { name: 'New Hampshire', abbreviation: 'NH'},
 	{ name: 'New Jersey', abbreviation: 'NJ' },
@@ -1337,7 +1337,7 @@ var usStates = [
 	// { name: 'Puerto Rico', abbreviation: 'PR'},
 	// { name: 'Rhode Island', abbreviation: 'RI'},
 	{ name: 'South Carolina', abbreviation: 'SC' },
-	// { name: 'South Dakota', abbreviation: 'SD'},
+	{ name: 'South Dakota', abbreviation: 'SD'},
 	{ name: 'Tennessee', abbreviation: 'TN' },
 	{ name: 'Texas', abbreviation: 'TX' },
 	{ name: 'Utah', abbreviation: 'UT' },
@@ -1347,7 +1347,7 @@ var usStates = [
 	{ name: 'Washington', abbreviation: 'WA' },
 	{ name: 'West Virginia', abbreviation: 'WV' },
 	// { name: 'Wisconsin', abbreviation: 'WI'},
-	// { name: 'Wyoming', abbreviation: 'WY' }
+	{ name: 'Wyoming', abbreviation: 'WY' }
 ]
 
 var visitedCountries = "", visitedStates = ""
