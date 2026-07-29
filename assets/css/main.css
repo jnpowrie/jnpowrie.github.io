@@ -48,6 +48,122 @@
 		-webkit-text-size-adjust: none;
 	}
 
+:root {
+	color-scheme: light;
+	--bg: #ffffff;
+	--text: #172033;
+	--muted: #475467;
+	--border: rgba(0, 0, 0, 0.12);
+	--surface: rgba(255, 255, 255, 0.96);
+	--link: #1d4ed8;
+	--link-hover: #1e3a8a;
+}
+
+html.dark-mode {
+	color-scheme: dark;
+	--bg: #0b1220;
+	--text: #f8fafc;
+	--muted: #dbe3f0;
+	--border: rgba(226, 232, 240, 0.18);
+	--surface: #111827;
+	--link: #7dd3fc;
+	--link-hover: #bfdbfe;
+}
+
+html, body {
+	background-color: var(--bg);
+	color: var(--text);
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+html.dark-mode body,
+html.dark-mode #wrapper,
+html.dark-mode .wrapper,
+html.dark-mode section,
+html.dark-mode footer,
+html.dark-mode .banner,
+html.dark-mode .spotlight {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+html.dark-mode p,
+html.dark-mode li,
+html.dark-mode .content,
+html.dark-mode .inner,
+html.dark-mode .banner p,
+html.dark-mode .spotlight p,
+html.dark-mode .box p,
+html.dark-mode .items section p,
+html.dark-mode .list li {
+	color: var(--muted);
+}
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6,
+html.dark-mode strong,
+html.dark-mode b {
+	color: var(--text);
+}
+
+html.dark-mode a {
+	color: var(--link);
+}
+
+html.dark-mode a:hover,
+html.dark-mode a:focus {
+	color: var(--link-hover);
+}
+
+html.dark-mode .icon.style2:before {
+	background-color: rgba(255, 255, 255, 0.08);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+	color: var(--text);
+}
+
+html.dark-mode a.icon.style2:hover:before,
+html.dark-mode a.icon.style2:active:before {
+	background-color: rgba(125, 211, 252, 0.16);
+	box-shadow: inset 0 0 0 1px rgba(125, 211, 252, 0.7);
+	color: var(--link);
+}
+
+html.dark-mode .items section {
+	background: rgba(255, 255, 255, 0.05);
+	border-color: var(--border);
+}
+
+html.dark-mode .button,
+html.dark-mode .button.primary {
+	background: #2563eb;
+	color: #f8fafc;
+	border-color: #2563eb;
+}
+
+html.dark-mode .button.alt {
+	background: transparent;
+	color: var(--text);
+	border-color: var(--border);
+}
+
+html.dark-mode .image img {
+	filter: brightness(0.9) contrast(1.05);
+}
+
+html.dark-mode :focus-visible {
+	outline: 2px solid var(--link);
+	outline-offset: 3px;
+}
+
 /* Box Model */
 
 	*, *:before, *:after {
